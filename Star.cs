@@ -2,17 +2,18 @@
 {
 
     internal class Star : SpaceObject
-    {
-        public string Type { get; set; }
+    {   //properties and list
         public int Temperature { get; set; }
+        public string Type { get; set; }
+        
 
-        public List<Planet> planetList = new List<Planet>();
+        internal List<Planet> planetList = new();
 
-        public new Position position { get; }
+        public new Position position { get; set; }
         public Star()
 
         {
-            this.position = new Position(0, 0);
+            position = new Position(0, 0);
 
         }
 

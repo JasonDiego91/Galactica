@@ -2,13 +2,14 @@
 {
     internal class SpaceObject
     {
-
+        //properties of star
         public enum StarType { YellowDwarf, White, BlueNeutron, RedGiant }
-
-        public int Id { get; set; }
-        public string? Name { get; set; }
         public Position? position { get; set; }
+        public string? Name { get; set; }
+        public int Id { get; set; }
 
+
+        //position of X and Y
         public class Position : SpaceObject
         {
             public Position()
