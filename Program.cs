@@ -9,11 +9,12 @@ namespace Galactica
         //Main program and startup with all relevent data shown
         static void Main(string[] args)
         {
-
+            // Add X or Y cordinates to see distance between sun 
             Star sun = new Star()
             {
                 Id = 1,
                 Name = "SUN",
+                position = (new SpaceObject.Position() { X = 0, Y = 0 }),
                 Type = StarType.YellowDwarf.ToString(),
                 Temperature = 5500
 
